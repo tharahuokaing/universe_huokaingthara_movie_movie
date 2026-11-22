@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="km" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIVERSE HUOKAING THARA - Movie Directory / បញ្ជីភាពយន្ត</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="universe_huokaingthara.jpg">
+</head>
+<body>
+
+    <!-- Holographic Scanline Overlay -->
+    <div id="holo-overlay"></div>
+
+    <!-- Header & Navigation -->
+    <header class="site-header">
+        <div class="logo-container">
+            <i class="fa-solid fa-film spin-icon"></i>
+            <h1>UNIVERSE HUOKAING THARA <span class="sub-title">បញ្ជីភាពយន្ត / Movie Directory</span></h1>
+        </div>
+        <div class="controls">
+            <button id="langToggleBtn" class="control-btn">🇰🇭 / EN</button>
+            <button id="themeToggleBtn" class="control-btn"><i class="fa-solid fa-moon"></i></button>
+        </div>
+    </header>
+
+    <!-- Main Container -->
+    <main class="main-container">
+
+        <!-- Hero Section -->
+        <section class="hero-card">
+            <div class="badge">🎬 UNIVERSE HUOKAING THARA • FEATURE FILM CATALOG</div>
+            <h2 class="km">បញ្ជីភាពយន្ត ការចាក់បញ្ចាំង និងបញ្ជីរឿងដែលចង់ទស្សនា</h2>
+            <h2 class="en">Feature Films, Screenings & Personal Watchlist</h2>
+            <p class="km">
+                រុករកភាពយន្តក្រោម <strong>UNIVERSE HUOKAING THARA Group</strong> រក្សាទុករឿងចូលចិត្តក្នុងបញ្ជីទស្សនា និងស្វែងយល់ពីស្នាដៃដែលមានការរួមចំណែកពីលោក <strong>ជອນ រតនៈ</strong> និងអភិវឌ្ឍប្រព័ន្ធដោយក្រុមអ្នកសរសេរកូដជំនាញ។
+            </p>
+            <p class="en">
+                Browse films under <strong>UNIVERSE HUOKAING THARA Group</strong>, save titles to your screening watchlist, and explore productions shaped with contributor <strong>Mr. Chorn Rothanak</strong> and engineered by our elite programmers and developers.
+            </p>
+
+            <!-- Search & Filter Bar -->
+            <div class="search-filter-bar">
+                <div class="search-box">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="movieSearch" placeholder="ស្វែងរកភាពយន្ត... / Search titles, genres, statuses...">
+                </div>
+                <div class="filter-pills">
+                    <button class="pill-btn active" data-filter="all">All / ទាំងអស់</button>
+                    <button class="pill-btn" data-filter="cinema">Cinema / រោងភាពយន្ត</button>
+                    <button class="pill-btn" data-filter="drama">Drama / មនោសញ្ចេតនា</button>
+                    <button class="pill-btn" data-filter="thriller">Thriller & Ghost / រន្ធត់</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Movies Grid -->
+        <section class="movies-section">
+            <div class="section-header-row">
+                <h3 class="section-heading">
+                    <i class="fa-solid fa-clapperboard"></i>
+                    <span class="km">បញ្ជីភាពយន្ត (Film Listings)</span>
+                    <span class="en">Film Listings</span>
+                </h3>
+                <span class="watchlist-counter" id="watchlistCounter">Watchlist: 0</span>
+            </div>
+
+            <div class="movies-grid" id="moviesGrid">
+
+                <!-- Film 1 -->
+                <article class="film-card featured" data-cat="cinema" data-id="MV-01">
+                    <div class="card-top">
+                        <span class="film-code">MV-01 • CINEMA</span>
+                        <span class="status-pill">SCREENING SPOTLIGHT</span>
+                    </div>
+                    <h4 class="km">ឆ្កួតស្នេហ៍ (Chkuot Sne)</h4>
+                    <h4 class="en">Chkuot Sne — Cinema Feature</h4>
+                    <p class="km">ភាពយន្តមនោសញ្ចេតនា និងកំប្លែងដែលមានការផ្សព្វផ្សាយចាក់បញ្ចាំងពិសេសជូនដល់ទស្សនិកជន។</p>
+                    <p class="en">Romantic drama and comedy feature highlighted across special screening showcases and promotions.</p>
+                    <div class="card-actions">
+                        <button class="action-btn watchlist-btn" data-film="Chkuot Sne (ឆ្កួតស្នេហ៍)">
+                            <i class="fa-regular fa-bookmark"></i> <span class="btn-label">Save</span>
+                        </button>
+                        <button class="action-btn inspect-btn"
+                            data-title="ឆ្កួតស្នេហ៍ (Chkuot Sne)"
+                            data-genre="Romance, Drama & Comedy"
+                            data-status="Screening Spotlight"
+                            data-synopsis="Highlighted across UNIVERSE HUOKAING THARA theatrical promotions with dual-language audience coverage.">
+                            <span class="km">ព័ត៌មាន</span> / <span class="en">Dossier</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Film 2 -->
+                <article class="film-card" data-cat="thriller" data-id="MV-02">
+                    <div class="card-top">
+                        <span class="film-code">MV-02 • THRILLER</span>
+                        <span class="status-pill">PRODUCTION</span>
+                    </div>
+                    <h4 class="km">ស្រមោលរាត្រីព្រឺព្រួច</h4>
+                    <h4 class="en">Eerie Nightfall</h4>
+                    <p class="km">ភាពយន្តអាថ៌កំបាំង និងរន្ធត់ព្រឺព្រួច ដែលភ្ជាប់ជាមួយការនិទានរឿងព្រេង និងបទពិសោធន៍។</p>
+                    <p class="en">Suspenseful horror and mystery film blending eerie atmosphere with folklore storytelling.</p>
+                    <div class="card-actions">
+                        <button class="action-btn watchlist-btn" data-film="Eerie Nightfall (ស្រមោលរាត្រីព្រឺព្រួច)">
+                            <i class="fa-regular fa-bookmark"></i> <span class="btn-label">Save</span>
+                        </button>
+                        <button class="action-btn inspect-btn"
+                            data-title="ស្រមោលរាត្រីព្រឺព្រួច / Eerie Nightfall"
+                            data-genre="Thriller, Ghost & Mystery"
+                            data-status="In Production"
+                            data-synopsis="Developed within the UNIVERSE HUOKAING THARA catalog with storytelling contributions from Mr. Chorn Rothanak.">
+                            <span class="km">ព័ត៌មាន</span> / <span class="en">Dossier</span>
+                        </button>
+                    </div>
+                </article>
+
+                <!-- Film 3 -->
+                <article class="film-card" data-cat="drama" data-id="MV-03">
+                    <div class="card-top">
+                        <span class="film-code">MV-03 • DRAMA</span>
+                        <span class="status-pill">FEATURE SLATE</span>
+                    </div>
+                    <h4 class="km">ក្តីស្រមៃ និងភាពជោគជ័យ</h4>
+                    <h4 class="en">Dreams Beyond the Horizon</h4>
+                    <p class="km">រឿងរ៉ាវមនោសញ្ចេតនា និងជីវិត អំពីការខិតខំប្រឹងប្រែង និងការជម្នះគ្រប់ដំណាក់កាល។</p>
+                    <p class="en">Emotional life drama following determination, setbacks, and perseverance toward long-term goals.</p>
+                    <div class="card-actions">
+                        <button class="action-btn watchlist-btn" data-film="Dreams Beyond the Horizon">
+                            <i class="fa-regular fa-bookmark"></i> <span class="btn-label">Save</span>
+                        </button>
+                        <button class="action-btn inspect-btn"
+                            data-title="ក្តីស្រមៃ និងភាពជោគជ័យ / Dreams Beyond the Horizon"
+                            data-genre="Drama & Life Journey"
+                            data-status="Feature Slate"
+                            data-synopsis="Part of the UNIVERSE HUOKAING THARA narrative slate crafted for strong emotional resonance.">
+                            <span class="km">ព័ត៌មាន</span> / <span class="en">Dossier</span>
+                        </button>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Film Dossier Modal -->
+    <div id="filmModal" class="modal-backdrop hidden">
+        <div class="modal-card">
+            <span class="modal-badge">FILM DOSSIER</span>
+            <h3 id="modalFilmTitle">Film Title</h3>
+            <div class="modal-body">
+                <p><strong>Genre:</strong> <span id="modalFilmGenre" class="accent-txt"></span></p>
+                <p><strong>Status:</strong> <span id="modalFilmStatus"></span></p>
+                <p id="modalFilmSynopsis" class="modal-synopsis"></p>
+            </div>
+            <button id="closeFilmModal" class="control-btn full-width">
+                <span class="km">បិទផ្ទាំង</span> / <span class="en">Close</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <p>&copy; 2026 UNIVERSE HUOKAING THARA Group. All Rights Reserved. / រក្សាសិទ្ធិគ្រប់យ៉ាង។</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
